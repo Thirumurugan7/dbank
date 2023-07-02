@@ -1,5 +1,6 @@
 service : {
-  checkBalance: () -> (nat) query;
-  decreMent: (nat) -> () oneway;
-  increMent: (nat) -> () oneway;
+  Compound: () -> () oneway;
+  checkBalance: () -> (float64) query;
+  decreMent: (float64) -> () oneway;
+  increMent: (float64) -> () oneway;
 }

@@ -1,6 +1,7 @@
 import type { Principal } from '@dfinity/principal';
 export interface _SERVICE {
-  'checkBalance' : () => Promise<bigint>,
-  'decreMent' : (arg_0: bigint) => Promise<undefined>,
-  'increMent' : (arg_0: bigint) => Promise<undefined>,
+  'Compound' : () => Promise<undefined>,
+  'checkBalance' : () => Promise<number>,
+  'decreMent' : (arg_0: number) => Promise<undefined>,
+  'increMent' : (arg_0: number) => Promise<undefined>,
 }
