@@ -6,7 +6,8 @@ actor DBank{
   currentVal:=5;
 let id = 53;
 
-  
+  // if there is any small changes that dont affect the state of blockchain happens, then all the state revert back to initialised one due to its nature i.e all the increment and decrement actions on the value will be reverted 
+  // to prevent that stable kesdyword can be used
 
   public func increMent(amount:Nat){
     currentVal+=amount;
