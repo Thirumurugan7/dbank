@@ -1,0 +1,5 @@
+service : {
+  checkBalance: () -> (nat) query;
+  decreMent: (nat) -> () oneway;
+  increMent: (nat) -> () oneway;
+}
