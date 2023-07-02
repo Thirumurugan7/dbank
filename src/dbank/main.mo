@@ -1,9 +1,9 @@
 import Debug "mo:base/Debug";
 
 actor DBank{
-  var currentVal = 3;
+  stable var  currentVal = 3;
 
-  currentVal:=5;
+  //currentVal:=5; usage of assignment after nullifiy the stable keyword's orthogonal persistence effect
 let id = 53;
 
   // if there is any small changes that dont affect the state of blockchain happens, then all the state revert back to initialised one due to its nature i.e all the increment and decrement actions on the value will be reverted 
@@ -21,7 +21,9 @@ public func decreMent(amount: Nat){
   Debug.print(debug_show(currentVal));
  }
  else{
-  Debug.print("subtraction overflow error in decrement")
+  Debug.print("subtraction overflow error in decrement");
+ 
+ 
  }
   
 };
